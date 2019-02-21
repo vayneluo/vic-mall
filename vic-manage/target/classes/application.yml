@@ -1,0 +1,78 @@
+spring:
+  ##数据源配置
+  datasource:
+    #url: jdbc:mysql://47.105.97.140:3306/fast_admin?useSSL=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/fast_admin_v1?useSSL=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: Haizol_1993
+  ##Redis配置
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 2000
+        min-idle: 8
+        max-idle: 500
+        max-wait: 10000
+    timeout: 0
+  session:
+    store-type: redis
+    redis:
+      namespace: fa:spring:session
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+##端口配置
+server:
+  port: 8083
+  servlet:
+    session:
+      #session 超时时间 单位为秒
+      timeout: 3600
+    #context-path: /api
+
+## Mybatis 配置
+mybatis:
+  type-aliases-package: com.github.manage.entity.manage
+  mapperLocations: classpath:mapper/*.xml
+
+## 分页配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: countSql
+
+## JWT配置
+jwt:
+  header: jwtHeader         #jwt的请求头
+  secret: manage         #jwt的加密字符串
+  expiration: 3600000       #jwt token有效时间（毫秒）
+  route:
+    login: /auth/login      #登录地址
+    refresh: /auth/refresh  #刷新token地址
+    register: /auth/register #注册的地址
+
+## FastAdmin配置
+fa:
+  # 操作日志开关
+  open-aop-log: true
+  security:
+    # 登录页路径
+    login-url: /login-page
+    # 登出路径
+    logout-url: /logout
+    # 首页路径
+    index-url: /index
+    # 免认证路径
+    anon-urls: /user/register,/index
+    # 登录认证路径
+    login-processing-url: /login
+
+
+
+
