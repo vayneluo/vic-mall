@@ -8,25 +8,13 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <groupId>com.vic.commons</groupId>
     <packaging>pom</packaging>
+
     <modules>
         <module>vic-common-base</module>
     </modules>
+
     <artifactId>vic-commons</artifactId>
-
-    <dependencies>
-
-    </dependencies>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.vic</groupId>
-                <artifactId>vic-common-base</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
 
 </project>
