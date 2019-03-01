@@ -23,11 +23,13 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--注册中心-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-eureka-client</artifactId>
-        </dependency>
+        <!--注册中心 zookeeper-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>-->
+        <!--</dependency>-->
+
+
 
         <!--Spring Boot 监控-->
         <dependency>

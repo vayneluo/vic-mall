@@ -11,7 +11,8 @@
 		<module>vic-manage</module>
 		<module>vic-online</module>
 		<module>vic-miniprogram</module>
-	</modules>
+        <module>vic-service</module>
+    </modules>
 	<name>vic-mall</name>
 	<description>Vic Mall</description>
 
