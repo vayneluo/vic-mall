@@ -30,7 +30,8 @@
 		<project.build.target>1.8</project.build.target>
 		<java.version>1.8</java.version>
 		<spring-boot.version>2.0.2.RELEASE</spring-boot.version>
-		<spring-cloud.version>Edgware.SR4</spring-cloud.version>
+		<!--F版本仅支持spring boot 2.x-->
+		<spring-cloud.version>Finchley.SR2</spring-cloud.version>
 		<lombok.version>1.16.20</lombok.version>
 		<!--通用mapper-->
 		<tk.mapper>2.1.2</tk.mapper>
@@ -42,7 +43,8 @@
 
 	<!--公共依赖-->
 	<dependencies>
-		<!--lombok-->
+
+		<!--Lombok-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -56,6 +58,15 @@
                 <groupId>com.vic</groupId>
                 <artifactId>vic-common-base</artifactId>
 				<version>${vic.version}</version>
+			</dependency>
+
+			<!--spirng cloud Finchley SR2 版本 -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Finchley.SR2</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
         </dependencies>
     </dependencyManagement>
@@ -77,5 +88,14 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<!-- 使用aliyun镜像 -->
+	<repositories>
+		<repository>
+			<id>aliyun</id>
+			<name>aliyun</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
 
 </project>
