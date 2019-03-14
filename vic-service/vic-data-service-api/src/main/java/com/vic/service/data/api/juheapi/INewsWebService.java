@@ -1,6 +1,7 @@
 package com.vic.service.data.api.juheapi;
 
 import com.vic.common.base.result.DataResult;
+import com.vic.common.base.result.ListResult;
 import com.vic.common.base.result.dtos.req.online.RequestEnter;
 import com.vic.service.data.api.juheapi.dtos.req.JuheApiReq;
 import com.vic.service.data.api.juheapi.dtos.rsp.NewsRsp;
@@ -17,5 +18,5 @@ import org.springframework.web.bind.annotation.PostMapping;
 public interface INewsWebService {
 
     @PostMapping(value = "/vic/news/latest")
-    DataResult<NewsRsp> queryLatestNewsList(RequestEnter<JuheApiReq> requestEnter);
+    ListResult<NewsRsp> queryLatestNewsList(RequestEnter<JuheApiReq> requestEnter);
 }

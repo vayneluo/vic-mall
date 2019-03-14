@@ -23,7 +23,7 @@ public class NewsRsp extends RspData{
     private String title;
 
     /** 发布时间 */
-    private Date date;
+    private String date;
 
     /** 新闻分类 */
     private String category;

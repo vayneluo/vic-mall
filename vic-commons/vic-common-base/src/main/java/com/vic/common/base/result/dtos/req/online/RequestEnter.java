@@ -17,6 +17,9 @@ public class RequestEnter<T extends ReqObject> extends BaseRequestEnter{
     @NotNull
     private T reqObject;
 
+    public RequestEnter() {
+    }
+
     public RequestEnter(T reqObject) {
         this.reqObject = reqObject;
     }
