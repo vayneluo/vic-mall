@@ -2,38 +2,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>vic-miniprogram</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>vic-miniprogram</name>
-	<description>Vic MiniProgram</description>
-
 	<parent>
+		<artifactId>vic-service</artifactId>
 		<groupId>com.vic</groupId>
-		<artifactId>vic-mall</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	<groupId>com.vic</groupId>
+	<artifactId>vic-data-service-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>vic-data-service-api</name>
+	<description>data service api</description>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>com.vic</groupId>
 			<artifactId>vic-common-base</artifactId>
 		</dependency>
-
 		<dependency>
-			<groupId>com.vic</groupId>
-			<artifactId>vic-goods-service-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
-
 		<dependency>
-			<groupId>com.vic</groupId>
-			<artifactId>vic-data-service-api</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
 		</dependency>
 	</dependencies>
 

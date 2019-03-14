@@ -5,7 +5,7 @@ spring:
     url: jdbc:mysql://localhost:3306/fast_admin_v1?useSSL=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true&serverTimezone=UTC
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: Haizol_1993
+    password: root
   ##Redis配置
   redis:
     host: localhost
