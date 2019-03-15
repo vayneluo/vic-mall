@@ -13,6 +13,8 @@
     <modules>
         <module>vic-goods-service</module>
         <module>vic-goods-service-api</module>
+        <module>vic-data-service</module>
+        <module>vic-data-service-api</module>
     </modules>
 
     <dependencies>
