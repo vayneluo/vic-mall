@@ -28,7 +28,7 @@ spring:
 
 ##端口配置
 server:
-  port: 8083
+  port: 8082
   servlet:
     session:
       #session 超时时间 单位为秒
