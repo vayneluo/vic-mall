@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: vic-manage
   ##数据源配置
   datasource:
     #url: jdbc:mysql://47.105.97.140:3306/fast_admin?useSSL=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true&serverTimezone=UTC
